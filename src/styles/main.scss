@@ -2,3 +2,7 @@
 @import 'themes/all';
 @import 'containers/all';
 @import 'components/all';
+
+* {
+	box-sizing: border-box;
+}
