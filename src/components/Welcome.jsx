@@ -1,6 +1,6 @@
 import React from 'react';
-import background from '../images/Katowice_Coal_Mine.jpg'
-import gruba from '../images/gruba_temp.png';
+import background from '../images/background.svg'
+import gruba from '../images/logo.svg';
 
 export default class Welcome extends React.Component {
 	constructor(props) {
@@ -23,13 +23,17 @@ export default class Welcome extends React.Component {
 
 	render () {
 		return (<section id='landing-welcome-cover'>
-			<div className='background'>
-				<img src={background} />
+			<div className='background' />
+			<div className='console'>
+				<h1>
+					<span className='grayed-out'>
+						grubait@katowice:~$ echo '
+					</span>Kolejno dupno rzecz je tukej
+					<span className='grayed-out'>'</span> 
+					<span className={`${this.state.cursorHidden ? 'hidden' : ''} cursor`} />
+				</h1>
 			</div>
-			<h1>Kolejno dupno rzecz je tukej <span className={this.state.cursorHidden ? 'hidden' : ''} /></h1>
-			<h2>Hned</h2>
 			<div className='thumbnail'><img src={gruba} className={this.state.logoScaledOut ? 'scaled-out' : ''} /></div>
-			<h3>GRUBA.IT</h3>
 		</section>);
 	}
 }
