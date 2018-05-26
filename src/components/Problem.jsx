@@ -11,7 +11,15 @@ class Problem extends Component {
         <Heading tag='h2' strong={true} className='section-problem__title'>
         Śląska społeczność IT dzisiaj.
         </Heading>
-        <Paragraph>Problem</Paragraph>
+        <Paragraph>
+          Śląsk posiada świetną i dużą społeczność IT. Specyfika naszego regionu wpływa na rozproszenie energi włożonej przez pojedynczych członków tej społeczności.
+        </Paragraph>
+        <Paragraph>
+           Meetupy się nakładają na siebie, ludzie z pomysłem na inicjatywę nie znają ludzi z know-how jak tę inicjatywę zrealizować. Wpływa to na efektywność naszych działań i minimalizuje znaczenie największego skupiska programistów w Polsce.
+        </Paragraph>
+        <Paragraph>
+          Czy można ten trend odwrócić?
+        </Paragraph>
       </Box>
     );
   }

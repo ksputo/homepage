@@ -1,11 +1,19 @@
 .app-container {
-    .content-wrapper {
-        background-color: $color-white;
+  .content-wrapper {
+    background-color: $color-white;
 
-        .vertically-centered {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+    .vertically-centered {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
+  }
+  &__footer-logo {
+    max-width: 80px !important;
+    margin-bottom: 15px;
+  }
+  &__footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
