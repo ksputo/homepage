@@ -1,3 +1,11 @@
 .app-container {
-    height: 100%;
+    .content-wrapper {
+        background-color: $color-white;
+
+        .vertically-centered {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 }

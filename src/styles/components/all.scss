@@ -1,8 +1,7 @@
 @import 'welcome';
+@import 'mission';
+@import 'problem';
+@import 'solution';
+@import 'team';
+@import 'contact';
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext');
-
-html, body, #app-container {
-	height: 100%;
-	position: relative;
-	font-family: 'Inconsolata', monospace;
-}
