@@ -3,6 +3,10 @@
     border-top: 3px solid $color-yellow;
     border-bottom: 3px solid $color-yellow;
 
+    p {
+        font-size: $paragraph-size;
+    }
+
     &__title {
         color: $color-yellow;
     }
@@ -28,5 +32,9 @@
         &:hover {
             box-shadow: 0px 0px 0px 2px $color-yellow;
         }
+    }
+
+    .grommetux-card__thumbnail {
+        background-position-y: 50%;
     }
 }

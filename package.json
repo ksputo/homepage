@@ -1,12 +1,12 @@
 {
-  "name": "react-simple-boilerplate",
-  "version": "0.0.1",
+  "name": "gruba-it-website",
+  "version": "1.0.0",
   "description": "",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server"
   },
-  "author": "szymonak",
+  "author": "grubait",
   "license": "BSD",
   "devDependencies": {
     "babel-core": "^6.26.0",

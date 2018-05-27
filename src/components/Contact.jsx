@@ -9,8 +9,14 @@ import Header from "grommet/components/Header";
 import Tabs from "grommet/components/Tabs";
 import Tab from "grommet/components/Tab";
 
-
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      tabActiveIndex: 0
+    }
+  }
+
   render() {
     return (
         <Box pad="large" align="center" full="horizontal" className='section-contact'>
@@ -43,7 +49,7 @@ class Contact extends Component {
                 </Heading>
               </Header>
               <Box pad="small">
-                <Tabs activeIndex={0}>
+                <Tabs activeIndex={this.state.tabActiveIndex} onActive={newActiveIndex => this.setState({tabActiveIndex: newActiveIndex})}>
                   <Tab title="KRS">
                     <Paragraph align="center" margin="none">
                       0000724287

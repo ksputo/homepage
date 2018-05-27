@@ -31,7 +31,7 @@ class Mission extends Component {
               Łączymy ludzi w IT.
             </Heading>
             <Paragraph size='xlarge' width='large' margin='none'>
-              Jesteśmy fundacją non-profit, która została stworzona przez członków społeczności IT na Śląsku, by ...
+              Jesteśmy fundacją non-profit, która została stworzona przez członków społeczności IT na Śląsku. Naszą misją jest pomoc ludziom w społeczności IT na Śląsku rozwijać się, tworzyć wartościowe inicjatywy i rozwijać swoje pasje.
             </Paragraph>
           </div>
         </Box>

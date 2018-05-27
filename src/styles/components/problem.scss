@@ -3,6 +3,10 @@
     border-top: 3px solid $color-yellow;
     border-bottom: 3px solid $color-yellow;
 
+    p {
+        font-size: $paragraph-size;
+    }
+
     .section-problem__title {
         color: $color-yellow;
     }

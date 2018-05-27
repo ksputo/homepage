@@ -10,6 +10,8 @@ import GroupIcon from "grommet/components/icons/base/Group";
 import MailIcon from "grommet/components/icons/base/Mail";
 import Label from "grommet/components/Label";
 
+import gargamel from '../images/web_version_gargamel_2.jpg';
+
 class Team extends Component {
   render() {
     return (
@@ -22,7 +24,7 @@ class Team extends Component {
         <Heading tag="h2" strong className="section-team__title">
           Manszaft
         </Heading>
-        <Columns size="medium" justify="center">
+        <Columns size="large" justify="center">
           <Founder
             image="https://thumbs.dreamstime.com/b/ugly-man-face-22790067.jpg"
             name="Bartek Glac"
@@ -31,7 +33,7 @@ class Team extends Component {
             email="bartek@gruba.it"
           />
           <Founder
-            image="https://thumbs.dreamstime.com/b/ugly-man-face-22790067.jpg"
+            image={gargamel}
             name="Kuba Sikora"
             title="Grubiorz"
             description="Sample description providing more details."
