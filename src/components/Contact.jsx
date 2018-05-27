@@ -21,7 +21,7 @@ class Contact extends Component {
     return (
         <Box pad="large" align="center" full="horizontal" className='section-contact'>
           <Tiles fill={true}>
-            <Tile align="start" basis="1/3">
+            <Tile  basis="1/3">
               <Header size="small" pad={{ horizontal: "small" }}>
                 <Heading tag="h4" strong={true} margin="none">
                   Email
@@ -42,7 +42,7 @@ class Contact extends Component {
                 </Paragraph>
               </Box>
             </Tile>
-            <Tile align="center" basis="1/3">
+            <Tile  basis="1/3">
               <Header size="small" pad={{ horizontal: "small" }}>
                 <Heading tag="h4" strong={true} margin="none">
                   Dane fundacji
@@ -68,7 +68,7 @@ class Contact extends Component {
                 </Tabs>
               </Box>
             </Tile>
-            <Tile align="end" basis="1/3">
+            <Tile  basis="1/3">
               <Header size="small" pad={{ horizontal: "small" }}>
                 <Heading tag="h4" strong={true} margin="none">
                   Adres

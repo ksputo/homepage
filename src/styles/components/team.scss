@@ -16,6 +16,11 @@
     &__founder-title {
         color: $color-white;
     }
+
+    &__founder-image {
+        flex-basis: 325px;
+    }
+
     &__mail-icon {
         display: flex;
     }

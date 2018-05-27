@@ -10,7 +10,9 @@ import GroupIcon from "grommet/components/icons/base/Group";
 import MailIcon from "grommet/components/icons/base/Mail";
 import Label from "grommet/components/Label";
 
-import gargamel from '../images/web_version_gargamel_2.jpg';
+import gargamel from "../images/web_version_gargamel_2.jpg";
+import bart from "../images/bart.jpg";
+import adam from "../images/adam.jpg";
 
 class Team extends Component {
   render() {
@@ -26,7 +28,7 @@ class Team extends Component {
         </Heading>
         <Columns size="large" justify="center">
           <Founder
-            image="https://thumbs.dreamstime.com/b/ugly-man-face-22790067.jpg"
+            image={bart}
             name="Bartek Glac"
             title="Grubiorz"
             description="Sample description providing more details."
@@ -40,7 +42,7 @@ class Team extends Component {
             email="jakub@gruba.it"
           />
           <Founder
-            image="https://thumbs.dreamstime.com/b/ugly-man-face-22790067.jpg"
+            image={adam}
             name="Adam Skowron"
             title="Grubiorz"
             description="Sample description providing more details."
@@ -57,7 +59,16 @@ export default Team;
 const Founder = ({ name, title, description, image, email }) => (
   <Box pad="large" align="center">
     <Card
-      thumbnail={image}
+      thumbnail={
+        <Box
+          className={`grommetux-card__thumbnail section-team__founder-image`}
+          flex
+          backgroundImage={`url(${image})`}
+          basis="small"
+          justify="center"
+          align="center"
+        />
+      }
       label={
         <Label
           uppercase="true"
@@ -69,7 +80,6 @@ const Founder = ({ name, title, description, image, email }) => (
       }
       heading={
         <Heading tag="h2" strong className="section-team__founder-name">
-          {" "}
           {name}
         </Heading>
       }
