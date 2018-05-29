@@ -1,38 +1,33 @@
 import React, { Component } from "react";
 import Tiles from "grommet/components/Tiles";
 import Tile from "grommet/components/Tile";
-import Box from "grommet/components/Box";
-import Heading from "grommet/components/Heading";
 import Image from "grommet/components/Image";
+import Section from "./Section";
 
 class Logos extends Component {
   render() {
-      const {title, logos} = this.props;
+    const { title, logos, className, backgroundColor } = this.props;
 
     return (
-      <Box
-        pad="large"
-        align="center"
-        full="vertical"
-        className="logos vertically-centered"
-      >
-        <Heading tag="h2" strong className="logos__title">
-          {title}
-        </Heading>
-        <Tiles fill={true}>
-            {
-                logos.map((logo, index) =>  <Logo key={`logo-${index}`} logo={logo} />)
-            }
+      <Section color={backgroundColor} title={title}>
+        <Tiles fill={true} className='logos'>
+          {logos.map((logo, index) => (
+            <Logo key={`logo-${index}`} logo={logo.image} link={logo.url} />
+          ))}
         </Tiles>
-      </Box>
+      </Section>
     );
   }
 }
 
 export default Logos;
 
-const Logo = ({ logo }) => (
-    <Tile className="logos__logo-container" basis="1/2">
-      <Image src={logo} className="logos__logo" />
-    </Tile>
-  );
+const Logo = ({ logo, link }) => (
+  <Tile className="logos__logo-container" basis="1/2">
+    {
+        link
+            ? <a href={link} target='_blank'><Image src={logo} className="logos__logo" /></a>
+            : <Image src={logo} className="logos__logo" />
+    }
+  </Tile>
+);

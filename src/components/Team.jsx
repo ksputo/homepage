@@ -31,7 +31,7 @@ class Team extends Component {
             image={bart}
             name="Bartek Glac"
             title="Grubiorz"
-            description="Sample description providing more details."
+            description="Programista, prelegent, trener. Od początku kariery zaangażowany w działalność społeczności IT w Polsce. "
             email="bartek@gruba.it"
           />
           <Founder

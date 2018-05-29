@@ -76,7 +76,7 @@ class Contact extends Component {
               </Header>
               <Box pad="small">
                 <Paragraph margin="none">Świętego Jana 11/4</Paragraph>
-                <Paragraph margin="none">KATO</Paragraph>
+                <Paragraph margin="none">KATOWICE</Paragraph>
               </Box>
             </Tile>
           </Tiles>

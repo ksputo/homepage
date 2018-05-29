@@ -5,7 +5,7 @@ import katowiceLogo from "../images/katowice_logo.png";
 
 class Supporters extends Component {
   render() {
-    return <Logos logos={[futureProcessingLogo, katowiceLogo]} title='Wspierają nas'/>;
+    return <Logos logos={[ { image: futureProcessingLogo }, { image: katowiceLogo }]} title='Wspierają nas' backgroundColor='white'/>;
   }
 }
 

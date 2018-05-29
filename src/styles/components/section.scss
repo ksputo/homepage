@@ -1,0 +1,19 @@
+.section {
+    &--grey {
+        background-color: $color-grey;
+        border-top: 3px solid $color-yellow;
+        border-bottom: 3px solid $color-yellow;
+    }
+
+    &--white {
+        background-color: $color-white;
+        border-top: 3px solid $color-yellow;
+        border-bottom: 3px solid $color-yellow;
+    }
+
+    &__title {
+        &--grey {
+            color: $color-yellow;
+        }
+    }
+}
