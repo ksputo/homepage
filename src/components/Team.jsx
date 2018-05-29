@@ -38,7 +38,7 @@ class Team extends Component {
             image={gargamel}
             name="Kuba Sikora"
             title="Grubiorz"
-            description="Sample description providing more details."
+            description="Programista z 5-letnim doświadczeniem. Prelegent i aktywny członek polskiego community IT. Miłośnik odkrywania nowych rozwiązań i dzielenia się wiedzą ze społecznością."
             email="jakub@gruba.it"
           />
           <Founder
