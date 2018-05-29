@@ -1,3 +1,5 @@
+@import 'variables';
+@import '~grommet/scss/grommet-core/index';
 @import 'basic/all';
 @import 'themes/all';
 @import 'containers/all';
@@ -5,4 +7,10 @@
 
 * {
 	box-sizing: border-box;
+}
+
+html, body, .app-container {
+	height: 100%;
+	position: relative;
+	font-family: 'Inconsolata', monospace;
 }

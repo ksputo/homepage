@@ -1,0 +1,15 @@
+.section-problem {
+    background-color: $color-grey;
+    border-top: 3px solid $color-yellow;
+    border-bottom: 3px solid $color-yellow;
+
+    p {
+        font-size: $paragraph-size;
+        color: $color-white;
+        text-align: justify
+    }
+
+    .section-problem__title {
+        color: $color-yellow;
+    }
+}

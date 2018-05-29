@@ -1,3 +1,26 @@
 .app-container {
-    height: 100%;
+  .content-wrapper {
+    background-color: $color-white;
+
+    .vertically-centered {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height:100vh;
+      height:auto;
+    }
+  }
+
+  &__header-menu {
+    color:$color-yellow;
+  }
+  &__footer-logo {
+    max-width: 80px !important;
+    margin-bottom: 15px;
+  }
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
 }
