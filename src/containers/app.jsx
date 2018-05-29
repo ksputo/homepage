@@ -9,6 +9,7 @@ import Box from "grommet/components/Box";
 import Footer from "grommet/components/Footer";
 import Paragraph from "grommet/components/Paragraph";
 import gruba from "../images/logo-grey.png";
+import favicon from "../images/favicon.png";
 
 import {
   Welcome,
