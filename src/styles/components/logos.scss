@@ -1,0 +1,15 @@
+.logos {
+    background-color: $color-white;
+    &__title {
+        margin-bottom: 100px !important;
+    }
+
+    &__logo-container{
+        justify-content: center;
+    }
+
+    &__logo {
+        max-height: 200px;
+        width: auto;
+    }
+}
