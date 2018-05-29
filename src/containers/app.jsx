@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import Header from "grommet/components/Header";
+import Menu from "grommet/components/Menu";
+import Anchor from "grommet/components/Anchor";
 import Grommet from "grommet/components/Grommet";
 import Box from "grommet/components/Box";
 import Footer from "grommet/components/Footer";
@@ -14,7 +17,7 @@ import {
   Solution,
   Team,
   Contact,
-  Supporters, 
+  Supporters,
   Friends
 } from "../components";
 

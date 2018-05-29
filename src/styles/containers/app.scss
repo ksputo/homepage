@@ -10,6 +10,10 @@
       height:auto;
     }
   }
+
+  &__header-menu {
+    color:$color-yellow;
+  }
   &__footer-logo {
     max-width: 80px !important;
     margin-bottom: 15px;

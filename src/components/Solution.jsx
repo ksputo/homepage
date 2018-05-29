@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Box from "grommet/components/Box";
 import Heading from "grommet/components/Heading";
 import Paragraph from "grommet/components/Paragraph";
-import Section from "grommet/components/Section";
 import Anchor from "grommet/components/Anchor";
 import Card from "grommet/components/Card";
 import Tiles from "grommet/components/Tiles";
@@ -11,19 +10,12 @@ import meetup from "../images/meetup.jpg";
 import education from "../images/education.jpg";
 import katowice from "../images/katowice.jpg";
 import cooperation from "../images/cooperation.jpg";
+import Section from "./Section";
 
 class Solution extends Component {
   render() {
     return (
-      <Box
-        className="section-solution vertically-centered"
-        pad="large"
-        align="center"
-        full="vertical"
-      >
-        <Heading tag="h2" strong={true} className="section-solution__title">
-          W czym chcemy pomóc?
-        </Heading>
+      <Section className="section-solution">
         <Box
           className="footer-cards-container"
           pad={{ vertical: "medium" }}
@@ -53,7 +45,7 @@ class Solution extends Component {
                 heading="Łatwe wejście do branży"
                 textSize="small"
                 label="Edukacja"
-                description="Organizacja wydarzeń edukacyjnych dla ludzi spoza branży przez ślaska społeczność IT."
+                description="Organizacja wydarzeń edukacyjnych dla ludzi spoza branży przez ślaską społeczność IT."
               />
             </Tile>
             <Tile align="start" basis="1/2">
@@ -78,7 +70,7 @@ class Solution extends Component {
             </Tile>
           </Tiles>
         </Box>
-      </Box>
+      </Section>
     );
   }
 }

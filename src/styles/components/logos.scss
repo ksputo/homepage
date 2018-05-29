@@ -1,6 +1,6 @@
 .logos {
     margin-top: 10vh;
-    
+
     &__title {
         margin-bottom: 100px !important;
     }
@@ -12,5 +12,9 @@
     &__logo {
         max-height: 200px;
         width: auto;
+
+        @media screen and (max-width: 720px) {
+            margin-bottom: 50px;
+        }
     }
 }
