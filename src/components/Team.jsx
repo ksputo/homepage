@@ -41,13 +41,7 @@ class Team extends Component {
             description="Sample description providing more details."
             email="jakub@gruba.it"
           />
-          <Founder
-            image={adam}
-            name="Adam Skowron"
-            title="Grubiorz"
-            description="Sample description providing more details."
-            email="adam@gruba.it"
-          />
+
         </Columns>
       </Box>
     );
