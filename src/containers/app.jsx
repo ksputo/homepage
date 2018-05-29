@@ -13,7 +13,8 @@ import {
   Problem,
   Solution,
   Team,
-  Contact
+  Contact,
+  Supporters
 } from "../components";
 
 export default class App extends React.Component {
@@ -26,6 +27,7 @@ export default class App extends React.Component {
           <Problem />
           <Solution />
           <Team />
+          <Supporters />
           <Contact />
           <Footer justify="center" align="center" size="small">
             <Box

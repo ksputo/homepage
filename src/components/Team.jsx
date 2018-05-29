@@ -41,13 +41,7 @@ class Team extends Component {
             description="Programista z 5-letnim doświadczeniem. Prelegent i aktywny członek polskiego community IT. Miłośnik odkrywania nowych rozwiązań i dzielenia się wiedzą ze społecznością."
             email="jakub@gruba.it"
           />
-          <Founder
-            image={adam}
-            name="Adam Skowron"
-            title="Grubiorz"
-            description="Sample description providing more details."
-            email="adam@gruba.it"
-          />
+
         </Columns>
       </Box>
     );
