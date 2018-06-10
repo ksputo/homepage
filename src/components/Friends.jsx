@@ -8,7 +8,7 @@ import Logos from './Logos';
 class Friends extends Component {
   render() {
     return (
-      <Logos title='Przyjaciele' logos={[{ image: meetjs, url: 'https://katowice.meetjs.pl/' }, { image: microsoft }, {image: azure }]} className='friends' backgroundColor='grey'/>
+      <Logos title='Kamraci' logos={[{ image: meetjs, url: 'https://katowice.meetjs.pl/' }, { image: microsoft }, {image: azure }]} className='friends' backgroundColor='grey'/>
     );
   }
 }

@@ -5,6 +5,11 @@
   .section-icon {
     color: $color-grey;
     fill: $color-grey;
+
+    @media screen and (max-width: 720px) {
+      width: 100px;
+      height: 100px;
+    }
   }
 
   .mission-slogan {

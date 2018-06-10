@@ -1,0 +1,14 @@
+.contest {
+
+    .centered-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        video {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
