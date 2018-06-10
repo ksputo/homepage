@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import moment from 'moment';
 
 class Countdown extends Component {
   constructor(props) {
@@ -86,22 +87,32 @@ class Countdown extends Component {
           <strong>{this.addLeadingZeros(countDown.days)}</strong>
         </span>
 
-        <span className="countdown__separator">:</span>
+        <span className="countdown__column">
+          <strong>{countDown.days === 1 ? 'dzień' : 'dni'}</strong>
+        </span>
 
         <span className="countdown__column">
           <strong>{this.addLeadingZeros(countDown.hours)}</strong>
         </span>
 
-        <span className="countdown__separator">:</span>
+        <span className="countdown__column">
+          <strong>{countDown.hours > 4 ? 'godzin' : countDown.hours === 1 ? 'godzina' : 'godziny'}</strong>
+        </span>
 
         <span className="countdown__column">
           <strong>{this.addLeadingZeros(countDown.min)}</strong>
         </span>
-        
-        <span className="countdown__separator">:</span>
+
+        <span className="countdown__column">
+          <strong>{countDown.min > 4 ? 'minut' : countDown.hours === 1 ? 'minuta' : 'minuty'}</strong>
+        </span>
 
         <span className="countdown__column">
           <strong>{this.addLeadingZeros(countDown.sec)}</strong>
+        </span>
+
+        <span className="countdown__column">
+          <strong>{countDown.sec > 4 ? 'sekund' : countDown.hours === 1 ? 'sekunda' : 'sekundy'}</strong>
         </span>
       </div>
     );
