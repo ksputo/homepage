@@ -26,6 +26,13 @@
 
         p {
             max-width: unset;
+
+            span.italic {
+                font-style: italic;
+            }
+        }
+        ul {
+            margin-left: 25PX;
         }
     }
 
