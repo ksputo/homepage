@@ -5,6 +5,7 @@ import microsoft from '../images/microsoft.png'
 import azure from '../images/azure.png'
 import qa from '../images/quality-meetup.png'
 import angular from '../images/angular_meetup.png'
+import antyrama from '../images/logo-antyrama.svg';
 import Logos from './Logos';
 
 class Friends extends Component {
@@ -15,7 +16,8 @@ class Friends extends Component {
         { image: microsoft },
         { image: azure },
         { image: qa },
-        { image: angular }
+        { image: angular },
+        { image: antyrama, url: 'http://www.a24.antyrama.org' }
       ]} className='friends' backgroundColor='grey'/>
     );
   }
