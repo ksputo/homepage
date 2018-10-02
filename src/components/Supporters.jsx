@@ -4,6 +4,7 @@ import futureProcessingLogo from "../images/future-processing__logo-2017-white.p
 import katowiceLogo from "../images/katowice_logo.png";
 import softserve from '../images/soft-serve.svg';
 import isystems from '../images/i-systems-logo.png';
+import billennium from '../images/logo_billennium-01.png';
 
 class Supporters extends Component {
   render() {
@@ -11,7 +12,8 @@ class Supporters extends Component {
       { image: futureProcessingLogo },
       { image: katowiceLogo },
       { image: softserve },
-      { image: isystems }
+      { image: isystems },
+      { image: billennium }
     ]} title='Wspierają nas' backgroundColor='white'/>;
   }
 }
