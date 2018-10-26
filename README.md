@@ -1,16 +1,14 @@
-React Simple Boilerplate
+Strona Gruba.IT
 ========================
-Description
+Prosta stronka, z której korzystamy jako naszje strony głównej fundacji. Oparta na boilerplate'ie od Kamila Szymańskiego.
 ---------------
-Very simple and easy to use boiler plate of react project using:
+Stack:
 * [Yarn](https://yarnpkg.com/lang/en/)
 * [Webpack](https://webpack.js.org/)
 * [Babel with env preset](https://babeljs.io/env)
 * [Webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 * [React-hot-loader](https://github.com/gaearon/react-hot-loader)
 * [Sass](http://sass-lang.com/)
-
-Right now it is simple version just for development without any production rules.
 
 Preconditions:
 ---------------
