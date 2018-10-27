@@ -21,7 +21,7 @@ class Problem extends Component {
           osób potencjalnie zainteresowanych poruszaną tematyką.
         </Paragraph>
         <Paragraph width="large">
-          To wszystko wpływa to na efektywność naszych działań i minimalizuje
+          To wszystko wpływa na efektywność naszych działań i minimalizuje
           znaczenie największego skupiska programistów w Polsce.
         </Paragraph>
         <Paragraph width="large">Czy można ten trend odwrócić?</Paragraph>
