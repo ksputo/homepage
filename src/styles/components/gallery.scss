@@ -1,27 +1,24 @@
+// TODO : change css to scss 
 .images {
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    width:60%;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width:60%;
 }
-
 .gallery {
-    display: flex;
-    justify-content: center;    
+  display: flex;
+  justify-content: center;    
 }
-
 .gallery-header {
-    padding: 30px;
+  padding: 30px;
 }
-
-img.gallery-item {
-    height: 200px;
-    padding: 4px;
-    cursor: pointer;
-    transition: 0.4s;
+ img.gallery-item {
+  height: 200px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.4s;
 }
-
-img.gallery-item:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ img.gallery-item:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
