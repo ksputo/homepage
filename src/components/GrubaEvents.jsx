@@ -3,7 +3,7 @@ import GrubaEvent from "../components/GrubaEvent";
 import Section from "./Section";
 import Tiles from "grommet/components/Tiles";
 import Box from "grommet/components/Box";
-import fetchEventsFromEventbrite from "../services/gruba-events-provider";
+import grubaEventsProvider from "../services/gruba-events-provider";
 class GrubaEvents extends Component {
 
   constructor(props) {
@@ -18,12 +18,11 @@ class GrubaEvents extends Component {
     console.log('test');
   }
   fetchEvents() {
-    const grubaEvents = fetchEventsFromEventbrite.then((grubaEvents) =>{
+    grubaEventsProvider.fetchEventsFromEventbrite((grubaEvents) =>{
       this.setState(
         { events: grubaEvents }
       );
-    });
-  }
+    })};
   render() {
     return (
       <Section color="white" title="Nasze wydarzenia" className='section-events'>
