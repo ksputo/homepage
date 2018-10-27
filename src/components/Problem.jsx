@@ -12,7 +12,7 @@ class Problem extends Component {
           organizowane jest dużo meetupów, spotkań i konferencji na wysokim
           poziomie, przyciągających dużo zainteresowanych. Jednak specyfika
           naszego, rozległego i mocno zdecentralizowanego, regionu wpływa na
-          rozproszenie energi włożonej przez członków naszej społeczności.
+          rozproszenie energii włożonej przez członków naszej społeczności.
         </Paragraph>
         <Paragraph width="large">
           Meetupy nakładają się na siebie, ludzie z pomysłem na inicjatywę nie
