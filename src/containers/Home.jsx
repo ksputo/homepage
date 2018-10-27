@@ -4,6 +4,9 @@ import Header from "grommet/components/Header";
 import Menu from "grommet/components/Menu";
 import Anchor from "grommet/components/Anchor";
 import Grommet from "grommet/components/Grommet";
+import { withLocalize } from "react-localize-redux";
+import { renderToStaticMarkup } from "react-dom/server";
+import LanguageToggle from '../components/LanguageToggle';
 
 import Footer from '../components/Footer';
 
@@ -18,12 +21,26 @@ import {
   Friends
 } from "../components";
 
-export default class App extends React.Component {
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.props.initialize({
+      languages: [
+        { name: "Polish", code: "pl" },
+        { name: "English", code: "en" }
+      ],
+      options: {
+        renderToStaticMarkup}
+    });
+  }
   render() {
     return (
       <React.Fragment>
+        
         <Welcome />
         <Grommet className="content-wrapper">
+        <LanguageToggle />
           <Mission />
           <Problem />
           <Solution />
@@ -37,3 +54,6 @@ export default class App extends React.Component {
     );
   }
 }
+
+
+export default withLocalize(Home);

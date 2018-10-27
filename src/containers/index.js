@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { LocalizeProvider } from "react-localize-redux";
 
 import favicon from "../images/favicon.png";
 import Home from "./Home";
@@ -7,8 +8,10 @@ import Contest from "./Contest";
 import NoMatch from "./404.jsx";
 import Meetjs33 from "./Meetjs33";
 
+
 const Routes = () => (
   <div className="app-container">
+  <LocalizeProvider>
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
@@ -17,6 +20,7 @@ const Routes = () => (
         <Route component={NoMatch} />
       </Switch>
     </Router>
+    </LocalizeProvider>
   </div>
 );
 

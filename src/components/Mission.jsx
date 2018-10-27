@@ -5,8 +5,16 @@ import Box from 'grommet/components/Box';
 import Heading from 'grommet/components/Heading';
 import Paragraph from 'grommet/components/Paragraph';
 import GroupIcon from 'grommet/components/icons/base/Group';
+import { withLocalize } from 'react-localize-redux';
+import missionTranslations from "../translations/mission.json";
+import { Translate } from 'react-localize-redux';
 
 class Mission extends Component {
+  constructor(props) {
+    super(props);
+    
+    this.props.addTranslation(missionTranslations);
+  }
   render() {
     return (
       <Box align='center' className='section-mission vertically-centered' full='vertical'>
@@ -28,11 +36,10 @@ class Mission extends Component {
               margin='none'
               className='mission-slogan'
             >
-              Łączymy ludzi w IT.
+              <Translate id="mission.heading" />
             </Heading>
             <Paragraph size='xlarge' width='large' margin='none'>
-              Jesteśmy fundacją non-profit, którą tworzą członkowie społeczności IT na Śląsku.
-              Naszą misją jest pomóc ludziom w naszym rejonie rozwijać się, tworzyć wartościowe inicjatywy i poszerzać sieć kontaktów.
+              <Translate id="mission.paragraph" />
             </Paragraph>
           </div>
         </Box>
@@ -43,4 +50,4 @@ class Mission extends Component {
 
 Mission.propTypes = {};
 
-export default Mission;
+export default withLocalize(Mission);

@@ -11,10 +11,24 @@ import education from "../images/education.jpg";
 import katowice from "../images/katowice.jpg";
 import cooperation from "../images/cooperation.jpg";
 import Section from "./Section";
+import { withLocalize } from 'react-localize-redux';
+import solutionTranslations from "../translations/solution.json"
+import { Translate } from "react-localize-redux";
 
 class Solution extends Component {
+  constructor(props) {
+    super(props);
+
+    this.props.addTranslation(solutionTranslations);
+  }
+
   render() {
     return (
+
+      <Translate>
+    {({translate}) => 
+    
+
       <Section className="section-solution">
         <Box
           className="footer-cards-container"
@@ -28,13 +42,14 @@ class Solution extends Component {
                 thumbnail={<Image src={meetup} />}
                 pad={{ horizontal: "small" }}
                 contentPad="medium"
-                heading={
+                heading=
+                {
                   <Heading tag="h2" strong>
-                    Spotkania, warsztaty i konferencje
+                    {translate('solution.communityCard.heading')}
                   </Heading>
                 }
-                label="Społeczność IT"
-                description="Pomoc w organizacji, promocji i rozwoju inicjatyw społeczności IT na Śląsku."
+                label={translate('solution.communityCard.label') }
+                description={translate('solution.communityCard.description')}
               />
             </Tile>
             <Tile align="end" basis="1/2">
@@ -42,10 +57,10 @@ class Solution extends Component {
                 thumbnail={<Image src={education} />}
                 pad={{ horizontal: "small" }}
                 contentPad="medium"
-                heading="Łatwe wejście do branży"
+                heading={translate('solution.educationCard.heading')}
                 textSize="small"
-                label="Edukacja"
-                description="Organizacja wydarzeń edukacyjnych dla ludzi spoza branży przez ślaską społeczność IT."
+                label={translate('solution.educationCard.label')}
+                description={translate('solution.educationCard.description')}
               />
             </Tile>
             <Tile align="start" basis="1/2">
@@ -53,9 +68,9 @@ class Solution extends Component {
                 thumbnail={<Image src={katowice} />}
                 pad={{ horizontal: "small" }}
                 contentPad="medium"
-                heading="Dobra marka regionu"
-                label="Śląsk"
-                description="Promocja działań, inicjatyw i wydarzeń organizowanych przez śląskie community IT."
+                heading={translate('solution.silesiaCard.heading')}
+                label={translate('solution.silesiaCard.label')}
+                description={translate('solution.silesiaCard.description')}
               />
             </Tile>
             <Tile align="end" basis="1/2">
@@ -63,19 +78,22 @@ class Solution extends Component {
                 thumbnail={<Image src={cooperation} />}
                 pad={{ horizontal: "small" }}
                 contentPad="medium"
-                heading="Współpraca na rynku IT"
-                label="Branża IT"
-                description="Wszystkie podmioty śląskiej branży IT: firmy, meetupy, konferencje i programiści pracują nad polepszeniem lokalnego rynku."
+                heading={translate('solution.marketCard.heading')}
+                label={translate('solution.marketCard.label')}
+                description={translate('solution.marketCard.description')}
               />
             </Tile>
           </Tiles>
         </Box>
       </Section>
+    }
+      </Translate>
     );
   }
 }
 
-export default Solution;
+
+export default withLocalize(Solution);
 
 const Image = ({ src }) => (
   <Box
