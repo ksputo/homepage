@@ -10,6 +10,7 @@ import { forkJoin } from 'rxjs';
 import { switchMap, map } from 'rxjs/operators';
 import Subpage from '../components/Subpage';
 import SubpageSection from '../components/SubpageSection';
+import MenuWrapped from '../components/MenuWrapped';
 
 class FriendEvents extends Component {
     constructor(props) {
@@ -31,22 +32,24 @@ class FriendEvents extends Component {
 
     render() {
         return (
-            <Subpage title='Nadchodzące wydarzenia kamratów' className='friend-events'>
-                {
-                    this.state.events.length > 0
-                        ? <Tiles fill={true}
-                            flush={false}>
-                            {this.state.events.map(event => <div className='friend-events__event' key={`event-${event.name}`}><Tile>
-                                <a href={event.link} target='_blank'>
-                                    <Card thumbnail={event.image}
-                                        heading={event.name}
-                                        label={event.group} />
-                                </a>
-                            </Tile></div>)}
-                        </Tiles>
-                        : <Spinning size='large' />
-                }
-            </Subpage>
+            <MenuWrapped>
+                <Subpage title='Nadchodzące wydarzenia kamratów' className='friend-events'>
+                    {
+                        this.state.events.length > 0
+                            ? <Tiles fill={true}
+                                flush={false}>
+                                {this.state.events.map(event => <div className='friend-events__event' key={`event-${event.name}`}><Tile>
+                                    <a href={event.link} target='_blank'>
+                                        <Card thumbnail={event.image}
+                                            heading={event.name}
+                                            label={event.group} />
+                                    </a>
+                                </Tile></div>)}
+                            </Tiles>
+                            : <Spinning size='large' />
+                    }
+                </Subpage>
+            </MenuWrapped>
         );
     }
 }
