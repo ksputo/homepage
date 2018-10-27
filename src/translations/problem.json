@@ -1,8 +1,21 @@
 {
     "problem": {
-      "heading": ["Łączymy ludzi w IT.", "Connect people in IT."],
-      "paragraph": ["Jesteśmy fundacją non-profit, którą tworzą członkowie społeczności IT na Śląsku. Naszą misją jest pomóc ludziom w naszym rejonie rozwijać się, tworzyć wartościowe inicjatywy i poszerzać sieć kontaktów.",
-        "We're non-profit foundation, blahblahblah"
-        ]
+      "heading": ["Wyzwania śląskiej społeczności IT", "Challenges of Silesian IT community"],
+      "paragraph1": [
+        "Śląsk posiada świetną i dużą społeczność IT. Na jego terenie organizowane jest dużo meetupów, spotkań i konferencji na wysokim poziomie, przyciągających dużo zainteresowanych. Jednak specyfika naszego, rozległego i mocno zdecentralizowanego, regionu wpływa na rozproszenie energii włożonej przez członków naszej społeczności.",
+        "Silesia has great and numerous IT community. There are a lot of high quality meetups, meetings and conferences being organised here which attract many people interested in the topic. However, specificity of our extensive and highly decentralized region has impact on our members' input."
+        ],
+      "paragraph2": [
+        "Meetupy nakładają się na siebie, ludzie z pomysłem na inicjatywę nie wiedzą jak ją zrealizować oraz nie znają osób, które mogłyby im pomóc. Świeże inicjatywy zaś mogą przejść zupełnie bez echa, nie przyciągając osób potencjalnie zainteresowanych poruszaną tematyką.",
+        "Meetups overlap, people with an idea for initiative don'tt know how to accomplish it and don't know people, who could help them with that. Fresh initiatives can go unnoticed, not drawing potentially interested people's attention."
+      ],
+      "paragraph3": [
+        "To wszystko wpływa na efektywność naszych działań i minimalizuje znaczenie największego skupiska programistów w Polsce.",
+        "All these affect ours activities' effectiveness and minimizes the significance of one of the largest programmers' concentration in Poland"
+      ],
+      "paragraph4": [
+        "Czy można ten trend odwrócić?",
+        "Is it possible to reverse this trend?"
+      ]
     }
   }
