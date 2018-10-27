@@ -5,7 +5,7 @@ import Card from 'grommet/components/Card';
 import Spinning from 'grommet/components/icons/Spinning';
 
 import friendProvider from '../services/friend-provider';
-import friendEventProvider from '../services/friend-events-provider';
+import friendEventsProvider from '../services/friend-events-provider';
 import { forkJoin } from 'rxjs';
 import { switchMap, map } from 'rxjs/operators';
 import Subpage from '../components/Subpage';
@@ -20,7 +20,7 @@ class FriendEvents extends Component {
     }
 
     componentDidMount() {
-        forkJoin(friendEventProvider(friendProvider))
+        forkJoin(friendEventsProvider(friendProvider))
             .subscribe(x => this.setState({
                 events: [...this.state.events, ...x
                     .reduce((accumulated, current) => [...accumulated, ...current

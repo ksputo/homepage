@@ -13,11 +13,11 @@ import {
   Problem,
   Solution,
   Team,
+  GrubaEvents,
   Contact,
   Supporters,
   Friends
 } from "../components";
-import Events from "../components/Events";
 
 export default class App extends React.Component {
   render() {
@@ -28,7 +28,7 @@ export default class App extends React.Component {
           <Mission />
           <Problem />
           <Solution />
-          <Events/>
+          <GrubaEvents/>
           <Team />
           <Supporters />
           <Friends />

@@ -3,8 +3,8 @@ import GrubaEvent from "../components/GrubaEvent";
 import Section from "./Section";
 import Tiles from "grommet/components/Tiles";
 import Box from "grommet/components/Box";
-
-class Events extends Component {
+import grubaEventsProvider from "../services/gruba-events-provider";
+class GrubaEvents extends Component {
 
   constructor(props) {
     super(props);
@@ -13,19 +13,18 @@ class Events extends Component {
     };
   }
   componentDidMount() {
-    this.fetchEventsFromEventbrite();
+    
+    this.fetchEvents();
+    console.log('test');
   }
-  fetchEventsFromEventbrite() {
-    const endpoint = "https://grubait.azurewebsites.net/eventbrite/organizers/17671110911/events?order_by=start_desc";
-    fetch(endpoint)
-      .then(response => response.json())
-      .then(data => {
-        this.setState(
-          { events: data.events }
-        )
-      }
-      );
-  }
+  fetchEvents() {
+    const grubaEvents = grubaEventsProvider();
+    console.log(grubaEvents);
+   
+      this.setState(
+          { events: grubaEvents }
+        )};
+ 
   render() {
     return (
       <Section color="white" title="Nasze wydarzenia" className='section-events'>
@@ -49,4 +48,4 @@ class Events extends Component {
 }
 
 
-export default Events;
+export default GrubaEvents;

@@ -2,6 +2,7 @@ import React from 'react'
 import Tile from "grommet/components/Tile";
 import Card from "grommet/components/Card";
 import Heading from "grommet/components/Heading";
+
 const GrubaEvent = ({ event }) => (
   <Tile>
     <a href={event.url} target='_blank'>
