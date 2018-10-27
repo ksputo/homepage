@@ -18,11 +18,8 @@ class GrubaEvents extends Component {
     console.log('test');
   }
   fetchEvents() {
-    grubaEventsProvider.fetchEventsFromEventbrite((grubaEvents) =>{
-      this.setState(
-        { events: grubaEvents }
-      );
-    })};
+    grubaEventsProvider.fetchEventsFromEventbrite().then(events => this.setState({events}))};
+
   render() {
     return (
       <Section color="white" title="Nasze wydarzenia" className='section-events'>
