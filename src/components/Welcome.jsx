@@ -40,7 +40,7 @@ class Welcome extends React.Component {
         <div className="console">
           <h1>
             <span className="grayed-out">grubait@katowice:~$ echo '</span>
-            {translate('welcome.welcomeText')}``
+            {translate('welcome.welcomeText')}
             <span className="grayed-out">'</span>
             <span
               className={`${this.state.cursorHidden ? "hidden" : ""} cursor`}
