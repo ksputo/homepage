@@ -1,32 +1,12 @@
 import React, { Component } from 'react';
 import { NavLink } from "react-router-dom";
-import Paragraph from "grommet/components/Paragraph";
 import Heading from "grommet/components/Heading";
 import Grommet from "grommet/components/Grommet";
-import Accordion from "grommet/components/Accordion";
-import AccordionPanel from "grommet/components/AccordionPanel";
-import Box from "grommet/components/Box";
-import Tiles from "grommet/components/Tiles";
-import Tile from "grommet/components/Tile";
-import Header from "grommet/components/Header";
-import CheckmarkIcon from "grommet/components/icons/base/Checkmark";
-import Countdown from "../components/Countdown";
 import logo from "../images/logo.svg";
 import Footer from "../components/Footer";
 
-const SubpageSection = ({ headerUppercase, title, children }) => (
-    <Box className="subpage__section">
-      <Heading
-        strong={true}
-        uppercase={headerUppercase}
-        align="start"
-        margin="small"
-      >
-        {title}
-      </Heading>
-      <div className="subpage__section--content">{children}</div>
-    </Box>
-  );
+import SubpageSection from '../components/SubpageSection';
+
 
 class Meetjs33 extends Component {
     render() {
