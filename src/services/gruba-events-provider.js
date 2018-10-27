@@ -3,7 +3,7 @@ export default function fetchEventsFromEventbrite() {
     fetch(endpoint)
         .then(response => response.json())
         .then(data => {
-           events: data.events;
+           return data.events;
         });
         
 }
