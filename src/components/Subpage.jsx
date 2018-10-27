@@ -6,10 +6,14 @@ import Box from 'grommet/components/Box';
 
 import SubpageSection from './SubpageSection';
 import logo from "../images/logo.svg";
+import crossmeetup from '../images/crossmeetup.jpg';
 
 export default ({ title, children, className }) =>
     <section className={`subpage ${className ? className : ''}`}>
         <div className="subpage__header">
+            <div className='subpage__header--overlay'>
+                <img src={crossmeetup} />
+            </div>
             <NavLink to="/" className="subpage__header--logo">
                 <img src={logo} />
             </NavLink>
