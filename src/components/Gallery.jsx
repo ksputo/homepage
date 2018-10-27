@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ModalImage from "react-modal-image";
 
 class Gallery extends Component {
-
   renderImage(imageUrl) {
     return (
       <ModalImage
@@ -13,7 +12,6 @@ class Gallery extends Component {
         hideDownload={true}
       />)
   }
-
 
   render() {
     return (
