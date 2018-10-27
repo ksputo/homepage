@@ -5,6 +5,7 @@ import Anchor from 'grommet/components/Anchor';
 import { NavLink } from 'react-router-dom';
 import Header from 'grommet/components/Header';
 import Box from 'grommet/components/Box';
+import { Action } from 'rxjs/internal/scheduler/Action';
 
 export default ({ children }) =>
     <React.Fragment>
@@ -12,6 +13,12 @@ export default ({ children }) =>
             float={false}
             className='app-container__menu'
             splash={false}>
+            <Box
+            align='center'
+            
+    direction='row'
+    wrap={false}
+    responsive={false}>
             <Menu responsive={true}
                 label='Menu'
                 icon={<MenuIcon />}
@@ -25,6 +32,15 @@ export default ({ children }) =>
                     <Anchor>Wydarzenia naszych kamratów</Anchor>
                 </NavLink>
             </Menu>
+            <Menu responsive={true}
+            label='Język'
+            icon={<MenuIcon />}
+            size='small'
+            >
+            <Anchor>Polski</Anchor>
+            <Anchor>English</Anchor>
+            </Menu>
+            </Box>
         </Header>
         {children}
     </React.Fragment>
