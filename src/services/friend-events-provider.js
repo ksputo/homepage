@@ -16,31 +16,28 @@ export default function getEvents(getFriends) {
             }).pipe(map(data => {
                 switch (friend.eventProviderName) {
                     case eventProviders.eventbrite:
-                        return data.response.events.map(event => {
-                            return {
-                                name: event.name.text,
-                                link: event.url,
-                                group: friend.name,
-                                image: friend.logo.image,
-                                date: LocalDate.parse(event.start.local).format(DateTimeFormatter.ofPattern('dd MM yyyy')),
-                                time: LocalDate.parse(event.start.local).format(DateTimeFormatter.ofPattern('HH:ii'))
-                            }
-                        });
+                        return data.response.events.map(event => ({
+
+                            name: event.name.text,
+                            link: event.url,
+                            group: friend.name,
+                            image: friend.logo.image,
+                            date: LocalDate.parse(event.start.local).format(DateTimeFormatter.ofPattern('dd MM yyyy')),
+                            time: LocalDate.parse(event.start.local).format(DateTimeFormatter.ofPattern('HH:ii'))
+                        }));
                     case eventProviders.meetup:
                         return data.response
-                        .filter(event => friend.additionalFilters
-                            ? friend.additionalFilters.some(filter => event.name.includes(filter))
-                            : true)
-                        .map(event => {
-                            return {
+                            .filter(event => friend.additionalFilters
+                                ? friend.additionalFilters.some(filter => event.name.includes(filter))
+                                : true)
+                            .map(event => ({
                                 name: event.name,
                                 link: event.link,
                                 group: event.group.name,
                                 image: friend.logo.image,
                                 date: event.local_date,
                                 time: event.local_time
-                            }
-                        });
+                            }));
                 }
             }));
         });

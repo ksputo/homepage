@@ -31,7 +31,7 @@ class FriendEvents extends Component {
 
     render() {
         return (
-            <Subpage title='Wydarzenia kamratów' className='friend-events'>
+            <Subpage title='Nadchodzące wydarzenia kamratów' className='friend-events'>
                 {
                     this.state.events.length > 0
                         ? <Tiles fill={true}
