@@ -12,7 +12,7 @@ class Problem extends Component {
           organizowane jest dużo meetupów, spotkań i konferencji na wysokim
           poziomie, przyciągających dużo zainteresowanych. Jednak specyfika
           naszego, rozległego i mocno zdecentralizowanego, regionu wpływa na
-          rozproszenie energi włożonej przez członków naszej społeczności.
+          rozproszenie energii włożonej przez członków naszej społeczności.
         </Paragraph>
         <Paragraph width="large">
           Meetupy nakładają się na siebie, ludzie z pomysłem na inicjatywę nie
@@ -21,7 +21,7 @@ class Problem extends Component {
           osób potencjalnie zainteresowanych poruszaną tematyką.
         </Paragraph>
         <Paragraph width="large">
-          To wszystko wpływa to na efektywność naszych działań i minimalizuje
+          To wszystko wpływa na efektywność naszych działań i minimalizuje
           znaczenie największego skupiska programistów w Polsce.
         </Paragraph>
         <Paragraph width="large">Czy można ten trend odwrócić?</Paragraph>

@@ -32,7 +32,7 @@ class Mission extends Component {
             </Heading>
             <Paragraph size='xlarge' width='large' margin='none'>
               Jesteśmy fundacją non-profit, którą tworzą członkowie społeczności IT na Śląsku.
-              Naszą misją jest pomoc ludziom w naszym rejonie rozwijać się, tworzyć wartościowe inicjatywy i poszerzać sieć kontaktów.
+              Naszą misją jest pomóc ludziom w naszym rejonie rozwijać się, tworzyć wartościowe inicjatywy i poszerzać sieć kontaktów.
             </Paragraph>
           </div>
         </Box>
