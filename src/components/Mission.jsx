@@ -7,15 +7,11 @@ import Paragraph from 'grommet/components/Paragraph';
 import GroupIcon from 'grommet/components/icons/base/Group';
 import { withLocalize } from 'react-localize-redux';
 import missionTranslations from "../translations/mission.json";
-import { Translate } from 'react-localize-redux';
+import translateComponent from "./TranslateComponent";
 
 class Mission extends Component {
-  constructor(props) {
-    super(props);
-    
-    this.props.addTranslation(missionTranslations);
-  }
   render() {
+    const {translate} = this.props;
     return (
       <Box align='center' className='section-mission vertically-centered' full='vertical'>
         <Box
@@ -36,10 +32,10 @@ class Mission extends Component {
               margin='none'
               className='mission-slogan'
             >
-              <Translate id="mission.heading" />
+              {translate('mission.heading')}
             </Heading>
             <Paragraph size='xlarge' width='large' margin='none'>
-              <Translate id="mission.paragraph" />
+              {translate('mission.paragraph')}
             </Paragraph>
           </div>
         </Box>
@@ -50,4 +46,4 @@ class Mission extends Component {
 
 Mission.propTypes = {};
 
-export default withLocalize(Mission);
+export default withLocalize(translateComponent(Mission, missionTranslations));

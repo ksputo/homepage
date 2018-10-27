@@ -2,8 +2,11 @@ import React from "react";
 import background from "../images/background.svg";
 import gruba from "../images/logo.svg";
 import ScrollDown from './ScrollDown';
+import welcomeTranslations from '../translations/welcome.json'
+import translateComponent from "./TranslateComponent";
+import { withLocalize, Translate } from 'react-localize-redux';
 
-export default class Welcome extends React.Component {
+class Welcome extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,13 +32,15 @@ export default class Welcome extends React.Component {
   }
 
   render() {
+    const {translate} = this.props;
     return (
+      
       <section id="landing-welcome-cover">
         <div className="background" />
         <div className="console">
           <h1>
-            <span className="grayed-out">grubait@katowice:~$ echo '</span>Kolejno
-            dupno rzecz je tukej
+            <span className="grayed-out">grubait@katowice:~$ echo '</span>
+            {translate('welcome.welcomeText')}``
             <span className="grayed-out">'</span>
             <span
               className={`${this.state.cursorHidden ? "hidden" : ""} cursor`}
@@ -52,3 +57,5 @@ export default class Welcome extends React.Component {
     );
   }
 }
+
+export default withLocalize(translateComponent(Welcome, welcomeTranslations));

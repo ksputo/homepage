@@ -4,25 +4,25 @@
             "label": ["Społeczność IT", "IT Community"],
             "heading": ["Spotkania, warsztaty i konferencje", "Meetings, workshops and conferences"],
             "description": ["Pomoc w organizacji, promocji i rozwoju inicjatyw społeczności IT na Śląsku.",
-                "[ENG]Pomoc w organizacji, promocji i rozwoju inicjatyw społeczności IT na Śląsku."]
+                "Helping with organising, promoting and developing Silesian IT community initiatives"]
         },
         "educationCard":{
             "label":["Edukacja","Education"],
-            "heading":["Łatwe wejście do branży","[eng]Łatwe wejście do branży"],
+            "heading":["Łatwe wejście do branży","Easy entry in the industry"],
             "description":["Organizacja wydarzeń edukacyjnych dla ludzi spoza branży przez ślaską społeczność IT.",
-                "[eng]Organizacja wydarzeń edukacyjnych dla ludzi spoza branży przez ślaską społeczność IT."]
+                "Organising educational events for people from outside market by Silesian IT community."]
         },
         "silesiaCard":{
-            "label":["Śląsk","[eng]Śląsk"],
-            "heading":["Dobra marka regionu","[eng]Dobra marka regionu"],
+            "label":["Śląsk","Silesia"],
+            "heading":["Dobra marka regionu","Good region brand"],
             "description":["Promocja działań, inicjatyw i wydarzeń organizowanych przez śląskie community IT.",
-                "[eng]Promocja działań, inicjatyw i wydarzeń organizowanych przez śląskie community IT."]
+                "Promoting activities, initiatives and events organised by Silesian IT community."]
         },
         "marketCard":{
-            "label":["Branża IT","[eng]Branża IT"],
-            "heading":["Współpraca na rynku IT","[eng]Współpraca na rynku IT"],
+            "label":["Branża IT","IT industry"],
+            "heading":["Współpraca na rynku IT","Collaboration on IT market"],
             "description":["Wszystkie podmioty śląskiej branży IT: firmy, meetupy, konferencje i programiści pracują nad polepszeniem lokalnego rynku.",
-                "[eng]Wszystkie podmioty śląskiej branży IT: firmy, meetupy, konferencje i programiści pracują nad polepszeniem lokalnego rynku."]
+                "All of Silesian IT industry entities: companies, meetups, conferences and programmers working on improving local market."]
         }
     }
   }

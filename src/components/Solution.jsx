@@ -11,23 +11,13 @@ import education from "../images/education.jpg";
 import katowice from "../images/katowice.jpg";
 import cooperation from "../images/cooperation.jpg";
 import Section from "./Section";
+import solutionTranslations from "../translations/solution.json";
+import translateComponent from "./TranslateComponent";
 import { withLocalize } from 'react-localize-redux';
-import solutionTranslations from "../translations/solution.json"
-import { Translate } from "react-localize-redux";
-
 class Solution extends Component {
-  constructor(props) {
-    super(props);
-
-    this.props.addTranslation(solutionTranslations);
-  }
-
   render() {
+    const {translate} = this.props;
     return (
-
-      <Translate>
-    {({translate}) => 
-    
 
       <Section className="section-solution">
         <Box
@@ -48,7 +38,7 @@ class Solution extends Component {
                     {translate('solution.communityCard.heading')}
                   </Heading>
                 }
-                label={translate('solution.communityCard.label') }
+                label={translate('solution.communityCard.label')}
                 description={translate('solution.communityCard.description')}
               />
             </Tile>
@@ -86,14 +76,12 @@ class Solution extends Component {
           </Tiles>
         </Box>
       </Section>
-    }
-      </Translate>
     );
   }
 }
 
 
-export default withLocalize(Solution);
+export default withLocalize(translateComponent(Solution, solutionTranslations));
 
 const Image = ({ src }) => (
   <Box

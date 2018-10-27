@@ -37,10 +37,10 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        
+        <LanguageToggle />
         <Welcome />
         <Grommet className="content-wrapper">
-        <LanguageToggle />
+        
           <Mission />
           <Problem />
           <Solution />
