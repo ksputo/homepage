@@ -5,7 +5,6 @@ import Tiles from "grommet/components/Tiles";
 import Box from "grommet/components/Box";
 import grubaEventsProvider from "../services/gruba-events-provider";
 class GrubaEvents extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -13,12 +12,8 @@ class GrubaEvents extends Component {
     };
   }
   componentDidMount() {
-    
-    this.fetchEvents();
-    console.log('test');
+    grubaEventsProvider.fetchEventsFromEventbrite().then(events => this.setState({events}))
   }
-  fetchEvents() {
-    grubaEventsProvider.fetchEventsFromEventbrite().then(events => this.setState({events}))};
 
   render() {
     return (
