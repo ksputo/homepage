@@ -7,22 +7,23 @@ import Box from 'grommet/components/Box';
 import SubpageSection from './SubpageSection';
 import logo from "../images/logo.svg";
 
-export default ({title, children, className}) => <section className={`subpage ${className ? className : ''}`}>
-    <div className="subpage__header">
-        <NavLink to="/" className="subpage__header--logo">
-            <img src={logo} />
-        </NavLink>
-        <Heading
-            className="subpage__header--title"
-            strong={true}
-            uppercase={true}
-            align="center"
-            margin="none"
-        >
-            {title}
-  </Heading>
-    </div>
-    <Grommet className="content-wrapper">
-        {children}
-    </Grommet>
-</section>
+export default ({ title, children, className }) =>
+    <section className={`subpage ${className ? className : ''}`}>
+        <div className="subpage__header">
+            <NavLink to="/" className="subpage__header--logo">
+                <img src={logo} />
+            </NavLink>
+            <Heading
+                className="subpage__header--title"
+                strong={true}
+                uppercase={true}
+                align="center"
+                margin="none"
+            >
+                {title}
+            </Heading>
+        </div>
+        <Grommet className="content-wrapper">
+            {children}
+        </Grommet>
+    </section>
