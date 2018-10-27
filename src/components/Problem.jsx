@@ -2,27 +2,30 @@ import React, { Component } from "react";
 import Box from "grommet/components/Box";
 import Paragraph from "grommet/components/Paragraph";
 import Section from "./Section";
+import problemTranslations from "../translations/problem.json";
+import translateComponent from "./TranslateComponent";
+import { withLocalize } from 'react-localize-redux';
 
 class Problem extends Component {
   render() {
+    const {translate} = this.props;
     return (
-      <Section color="grey" title="Wyzwania śląskiej społeczności IT" className='section-problem'>
+      <Section color="grey" title={translate('problem.title')} className='section-problem'>
         <Paragraph width="large">
           {translate('problem.paragraph1')}
         </Paragraph>
         <Paragraph width="large">
-          Meetupy nakładają się na siebie, ludzie z pomysłem na inicjatywę nie
-          wiedzą jak ją zrealizować oraz nie znają osób, które mogłyby im pomóc.
-          Świeże inicjatywy zaś mogą przejść zupełnie bez echa, nie przyciągając
-          osób potencjalnie zainteresowanych poruszaną tematyką.
+        {translate('problem.paragraph2')}
         </Paragraph>
         <Paragraph width="large">
-          
+        {translate('problem.paragraph3')}
         </Paragraph>
-        <Paragraph width="large">Czy można ten trend odwrócić?</Paragraph>
+        <Paragraph width="large">
+        {translate('problem.paragraph4')}
+        </Paragraph>
       </Section>
     );
   }
 }
 
-export default Problem;
+export default withLocalize(translateComponent(Problem, problemTranslations));
