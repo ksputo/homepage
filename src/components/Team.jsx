@@ -14,8 +14,14 @@ import gargamel from "../images/web_version_gargamel_2.jpg";
 import bart from "../images/bart.jpg";
 import adam from "../images/adam.jpg";
 
+import teamTranslations from '../translations/team.json'
+import translateComponent from "./TranslateComponent";
+import {withLocalize} from 'react-localize-redux';
+
+
 class Team extends Component {
   render() {
+    const {translate} = this.props;
     return (
       <Box
         pad="large"
@@ -24,22 +30,24 @@ class Team extends Component {
         className="section-team vertically-centered"
       >
         <Heading tag="h2" strong className="section-team__title">
-          Manszaft
+          {translate('team.heading')}
         </Heading>
         <Columns size="large" justify="center">
           <Founder
             image={bart}
             name="Bartek Glac"
-            title="Grubiorz"
-            description="Programista, prelegent, trener. Od początku kariery zaangażowany w działalność społeczności IT w Polsce. "
+            title={translate('team.bart.title')}
+            description={translate('team.bart.description')}
             email="bartek@gruba.it"
+            mailMeLabel={translate('team.mailMeLabel')}
           />
           <Founder
             image={gargamel}
             name="Kuba Sikora"
-            title="Grubiorz"
-            description="Programista z 5-letnim doświadczeniem. Prelegent i aktywny członek polskiego community IT. Miłośnik odkrywania nowych rozwiązań i dzielenia się wiedzą ze społecznością."
+            title={translate('team.gargamel.title')}
+            description={translate('team.gargamel.description')}
             email="jakub@gruba.it"
+            mailMeLabel={translate('team.mailMeLabel')}
           />
 
         </Columns>
@@ -48,9 +56,9 @@ class Team extends Component {
   }
 }
 
-export default Team;
+export default withLocalize(translateComponent(Team, teamTranslations));
 
-const Founder = ({ name, title, description, image, email }) => (
+const Founder = ({ name, title, description, image, email, mailMeLabel }) => (
   <Box pad="large" align="center">
     <Card
       thumbnail={
@@ -81,7 +89,7 @@ const Founder = ({ name, title, description, image, email }) => (
     />
     <Button
       icon={<Pulse className="section-team__mail-icon" icon={<MailIcon />} />}
-      label="Napisz do mnie"
+      label={mailMeLabel}
       href={`mailto:${email}`}
       className="section-team__mail-button"
     />

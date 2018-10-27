@@ -4,7 +4,7 @@ import gruba from "../images/logo.svg";
 import ScrollDown from './ScrollDown';
 import welcomeTranslations from '../translations/welcome.json'
 import translateComponent from "./TranslateComponent";
-import { withLocalize, Translate } from 'react-localize-redux';
+import { withLocalize } from 'react-localize-redux';
 
 class Welcome extends React.Component {
   constructor(props) {

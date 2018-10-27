@@ -9,6 +9,10 @@ import Header from "grommet/components/Header";
 import Tabs from "grommet/components/Tabs";
 import Tab from "grommet/components/Tab";
 
+import contactTranslations from '../translations/contact.json'
+import translateComponent from "./TranslateComponent";
+import { withLocalize } from 'react-localize-redux';
+
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -18,6 +22,7 @@ class Contact extends Component {
   }
 
   render() {
+    const {translate} = this.props;
     return (
         <Box pad="large" align="center" full="horizontal" className='section-contact'>
           <Tiles fill={true}>
@@ -45,7 +50,7 @@ class Contact extends Component {
             <Tile  basis="1/3">
               <Header size="small" pad={{ horizontal: "small" }}>
                 <Heading tag="h4" strong={true} margin="none">
-                  Dane fundacji
+                {translate('contact.foundationInfoHeading')}
                 </Heading>
               </Header>
               <Box pad="small">
@@ -71,7 +76,7 @@ class Contact extends Component {
             <Tile  basis="1/3">
               <Header size="small" pad={{ horizontal: "small" }}>
                 <Heading tag="h4" strong={true} margin="none">
-                  Adres
+                  {translate('contact.addressHeading')}
                 </Heading>
               </Header>
               <Box pad="small">
@@ -85,4 +90,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default withLocalize(translateComponent(Contact, contactTranslations));

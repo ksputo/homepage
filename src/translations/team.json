@@ -1,0 +1,16 @@
+{
+    "team": {
+        "heading": ["Manszaft", "Team"],
+        "mailMeLabel": ["Napisz do mnie", "Email me"],
+        "bart": {
+            "title": ["Grubiorz", "Miner"],
+            "description": ["Programista, prelegent, trener. Od początku kariery zaangażowany w działalność społeczności IT w Polsce.",
+            "Programmer, speaker, trainer. Involved in polish IT community activities since beginning of the career."]
+        },
+        "gargamel": {
+            "title": ["Grubiorz", "Miner"],
+            "description": ["Programista z 5-letnim doświadczeniem. Prelegent i aktywny członek polskiego community IT. Miłośnik odkrywania nowych rozwiązań i dzielenia się wiedzą ze społecznością.",
+            "Programmer with 5-years of experience. Speaker and active member of polish IT community. Fan of discovering new solutions and sharing the knowledge with the community."]
+        }
+    }
+}
