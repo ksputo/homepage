@@ -22,10 +22,10 @@ export default class App extends React.Component {
       <MenuWrapped>
         <Welcome />
         <Grommet className="content-wrapper">
+          <GrubaEvents />
           <Mission />
           <Problem />
           <Solution />
-          <GrubaEvents/>
           <Team />
           <Supporters />
           <Friends />

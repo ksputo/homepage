@@ -1,41 +1,44 @@
 import React, { Component } from "react";
-import GrubaEvent from "../components/GrubaEvent";
 import Section from "./Section";
 import Tiles from "grommet/components/Tiles";
+import Spinning from 'grommet/components/icons/Spinning';
 import Box from "grommet/components/Box";
+
+import GrubaEvent from "../components/GrubaEvent";
 import fetchEventsFromEventbrite from "../services/gruba-events-provider";
-class GrubaEvents extends Component {
+
+export default class GrubaEvents extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      events: [],
+      events: []
     };
   }
   componentDidMount() {
-    fetchEventsFromEventbrite().then(events => this.setState({events}))
+    fetchEventsFromEventbrite()
+      .then(events => this.setState({ events: events.slice(0, 10) }));
   }
 
   render() {
     return (
-      <Section color="white" title="Nasze wydarzenia" className='section-events'>
+      <Section color="white" title="Nasze ostatnie wydarzenia" className='section-events'>
         <Box
-          className="footer-cards-container"
+          className="our-events-container"
           pad={{ vertical: "medium" }}
           size={{ width: "xxlarge" }}
           direction="row"
         >
-          <Tiles fill>
-            {
-              this.state.events.map(event => {
-                return <GrubaEvent event={event} />
-              })
-            }
-          </Tiles>
+          {
+            this.state.events.length > 0
+              ? <Tiles fill>
+                {
+                  this.state.events.map(event => <GrubaEvent event={event} />)
+                }
+              </Tiles>
+              : <Spinning size='large' />
+          }
         </Box>
       </Section>
     )
   }
 }
-
-
-export default GrubaEvents;

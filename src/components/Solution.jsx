@@ -11,6 +11,7 @@ import education from "../images/education.jpg";
 import katowice from "../images/katowice.jpg";
 import cooperation from "../images/cooperation.jpg";
 import Section from "./Section";
+import GrubaEvents from "./GrubaEvents";
 
 class Solution extends Component {
   render() {
