@@ -1,0 +1,16 @@
+.section-events {
+    background-color: $color-white;
+    border-top: 3px solid $color-yellow;
+    border-bottom: 3px solid $color-yellow;
+
+    p {
+        font-size: $paragraph-size;
+        color: $color-white;
+        text-align: justify
+    }
+
+    .section-events__title {
+        color: $color-yellow;
+    }
+    
+}

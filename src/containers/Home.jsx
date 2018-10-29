@@ -13,6 +13,7 @@ import {
   Problem,
   Solution,
   Team,
+  GrubaEvents,
   Contact,
   Supporters,
   Friends
@@ -22,11 +23,12 @@ export default class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Welcome />
+        <Welcome /> 
         <Grommet className="content-wrapper">
           <Mission />
           <Problem />
           <Solution />
+          <GrubaEvents/>
           <Team />
           <Supporters />
           <Friends />
