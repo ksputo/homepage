@@ -9,6 +9,7 @@ import {
   Problem,
   Solution,
   Team,
+  GrubaEvents,
   Contact,
   Supporters,
   Friends
@@ -24,6 +25,7 @@ export default class App extends React.Component {
           <Mission />
           <Problem />
           <Solution />
+          <GrubaEvents/>
           <Team />
           <Supporters />
           <Friends />
