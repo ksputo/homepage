@@ -59,8 +59,8 @@ const Founder = ({ name, title, description, image, email }) => (
           flex
           backgroundImage={`url(${image})`}
           basis="small"
-          justify="center"
-          align="center"
+          justify="end"
+          align="end"
         />
       }
       label={
