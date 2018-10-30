@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import ModalImage from "react-modal-image";
+import Spinning from 'grommet/components/icons/Spinning';
 
 class Gallery extends Component {
   renderImage(imageUrl) {
     return (
       <ModalImage
-        className="cursor gallery-item"
+        key={`gallery-image-${imageUrl}`}
+        className="cursor gallery__images--item"
         small={imageUrl}
         large={imageUrl}
         hideZoom={true}
@@ -15,11 +17,15 @@ class Gallery extends Component {
 
   render() {
     return (
-      <div className="gallery">
-        <div className="images">
-          {this.props.imageUrls.map(imageUrl => this.renderImage(imageUrl))}
+      <section className="gallery">
+        <div className="gallery__images">
+            {
+                this.props.imageUrls
+                ? this.props.imageUrls.map(this.renderImage)
+                : <Spinning size='large' />
+            }
         </div>
-      </div>
+      </section>
     );
   }
 }

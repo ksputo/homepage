@@ -1,35 +1,29 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import Grommet from "grommet/components/Grommet";
 
-import Footer from '../components/Footer';
-
-import {
-    Gallery,
-    Contact,
-    GalleryHeader
-} 
-from "../components";
-// set path to gallery folder
-const images = importAll(require.context('../images/gallery', false, /\.(png|jpe?g|svg)$/));
+import { Footer, Contact, Subpage, MenuWrapped, Gallery } from '../components';
+import galleryService from "../services/gallery-service";
 
 export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      images: []
+    };
+  }
+
+  componentDidMount() {
+    galleryService().subscribe(images => this.setState({ images }));
+  }
+
   render() {
     return (
-      <React.Fragment>
-        <Grommet className="content-wrapper">
-        <GalleryHeader title="Galeria"/>
-        <Gallery imageUrls={images}/>
-        <Footer />
-        <Contact />
-        </Grommet>
-      </React.Fragment>
+      <MenuWrapped>
+        <Subpage title="Zdjęcia z naszych wydarzeń" className="friend-events">
+          <Gallery imageUrls={this.state.images} />
+          <Contact />
+          <Footer />
+        </Subpage>
+      </MenuWrapped>
     );
   }
 }
-
-function importAll(r) {
-    return r.keys().map(r);
-  }
-  
- 

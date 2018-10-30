@@ -7,7 +7,7 @@
     background-color: $color-white;
     color: $color-grey;
 
-    ul {
+    ul:not(.grommetux-tabs) {
         list-style-type: square;
 
         li {

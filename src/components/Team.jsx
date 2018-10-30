@@ -65,7 +65,7 @@ const Founder = ({ name, title, description, image, email }) => (
       }
       label={
         <Label
-          uppercase="true"
+          uppercase={true}
           margin="none"
           className="section-team__founder-title"
         >
