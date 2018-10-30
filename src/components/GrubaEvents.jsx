@@ -27,7 +27,7 @@ class GrubaEvents extends Component {
           <Tiles fill>
             {
               this.state.events.map(event => {
-                return <GrubaEvent event={event} />
+                return <GrubaEvent key={`gruba-event-${event.name.text}`} event={event} />
               })
             }
           </Tiles>
