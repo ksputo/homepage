@@ -9,7 +9,7 @@ import {
   Problem,
   Solution,
   Team,
-  GrubaEvents,
+  OurEvents,
   Contact,
   Supporters,
   Friends
@@ -22,10 +22,10 @@ export default class App extends React.Component {
       <MenuWrapped>
         <Welcome />
         <Grommet className="content-wrapper">
+          <OurEvents />
           <Mission />
           <Problem />
           <Solution />
-          <GrubaEvents/>
           <Team />
           <Supporters />
           <Friends />
