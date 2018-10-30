@@ -6,6 +6,7 @@ import Home from "./Home";
 import Contest from "./Contest";
 import NoMatch from "./404.jsx";
 import Meetjs33 from "./Meetjs33";
+import Gallery from "./Gallery";
 import FriendEvents from "./FriendEvents";
 import Gallery from "./Gallery";
 
@@ -16,6 +17,7 @@ const Routes = () => (
         <Route exact path="/" component={Home} />
         <Route path="/zadanie" component={Contest} />
         <Route path="/meetjs33" component={Meetjs33} />
+        <Route path="/galeria" component={Gallery} />
         <Route path="/kamraci" component={FriendEvents} />
         <Route path="/galeria" component={Gallery} />
       </Switch>
