@@ -11,7 +11,6 @@ import education from "../images/education.jpg";
 import katowice from "../images/katowice.jpg";
 import cooperation from "../images/cooperation.jpg";
 import Section from "./Section";
-import OurEvents from "./OurEvents";
 
 class Solution extends Component {
   render() {
