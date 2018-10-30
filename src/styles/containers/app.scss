@@ -23,4 +23,20 @@
     flex-direction: column;
     margin-bottom: 15px;
   }
+  &__menu, .grommetux-header__container--fill .grommetux-header {
+    background-color: $color-grey;
+
+    button:hover {
+      .grommetux-control-icon {
+        fill: $color-white;
+        stroke: $color-white;
+      }
+    }
+  }
+}
+
+.grommetux-menu__drop {
+  .grommetux-menu__contents {
+    margin-top: 12px;
+  }
 }

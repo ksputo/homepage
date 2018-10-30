@@ -1,0 +1,10 @@
+.friend-events {
+    &__event {
+        background-color: $color-grey;
+        border: 3px solid $color-yellow;
+
+        & label, & h2 {
+            color: $color-white;
+        }
+    }
+}

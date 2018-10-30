@@ -7,6 +7,7 @@ import Contest from "./Contest";
 import NoMatch from "./404.jsx";
 import Meetjs33 from "./Meetjs33";
 import Gallery from "./Gallery";
+import FriendEvents from "./FriendEvents";
 
 const Routes = () => (
   <div className="app-container">
@@ -16,6 +17,7 @@ const Routes = () => (
         <Route path="/zadanie" component={Contest} />
         <Route path="/meetjs33" component={Meetjs33} />
         <Route path="/galeria" component={Gallery} />
+        <Route path="/kamraci" component={FriendEvents} />
         <Route component={NoMatch} />
       </Switch>
     </Router>
