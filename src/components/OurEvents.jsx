@@ -4,7 +4,7 @@ import Tiles from "grommet/components/Tiles";
 import Spinning from 'grommet/components/icons/Spinning';
 import Box from "grommet/components/Box";
 
-import OurEvent from "../components/OurEvent";
+import OurEvent from "./OurEvent";
 import fetchEventsFromEventbrite from "../services/gruba-events-provider";
 
 export default class OurEvents extends Component {
