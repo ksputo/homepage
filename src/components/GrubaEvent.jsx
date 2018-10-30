@@ -4,7 +4,7 @@ import Card from "grommet/components/Card";
 import Heading from "grommet/components/Heading";
 import Anchor from 'grommet/components/Anchor';
 
-const GrubaEvent = ({ event }) => (
+const OurEvent = ({ event }) => (
   <Tile>
       <Card
         thumbnail={<img src={event.logo.original.url}/>}
@@ -19,7 +19,7 @@ const GrubaEvent = ({ event }) => (
       />
   </Tile>
 );
-export default GrubaEvent;
+export default OurEvent;
 
 const FullDate = ({ dateString }) => {
   const date = new Date(dateString);

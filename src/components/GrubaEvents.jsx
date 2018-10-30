@@ -4,10 +4,10 @@ import Tiles from "grommet/components/Tiles";
 import Spinning from 'grommet/components/icons/Spinning';
 import Box from "grommet/components/Box";
 
-import GrubaEvent from "../components/GrubaEvent";
+import OurEvent from "../components/OurEvent";
 import fetchEventsFromEventbrite from "../services/gruba-events-provider";
 
-export default class GrubaEvents extends Component {
+export default class OurEvents extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -32,7 +32,7 @@ export default class GrubaEvents extends Component {
             this.state.events.length > 0
               ? <Tiles fill>
                 {
-                  this.state.events.map(event => <GrubaEvent key={`gruba-event-${event.name.text}`} event={event} />)
+                  this.state.events.map(event => <OurEvent key={`gruba-event-${event.name.text}`} event={event} />)
                 }
               </Tiles>
               : <Spinning size='large' />
