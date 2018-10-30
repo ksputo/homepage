@@ -10,7 +10,6 @@ const GrubaEvent = ({ event }) => (
         thumbnail={<img src={event.logo.original.url}/>}
         label={<FullDate dateString={event.start.local} />}
         pad={{ horizontal: "small" }}
-        contentPad={{ horizontal: "xs", vertical: "small" }}
         link={<Anchor href={event.url} label='Zobacz wydarzenie' />} 
         heading={
           <Heading tag="h6">
