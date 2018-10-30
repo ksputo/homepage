@@ -32,7 +32,8 @@ export default class GrubaEvents extends Component {
             this.state.events.length > 0
               ? <Tiles fill>
                 {
-                  this.state.events.map(event => <GrubaEvent event={event} />)
+                  this.state.events.map(event =>
+                                        <GrubaEvent key={`gruba-event-${event.name.text}`} event={event} />)
                 }
               </Tiles>
               : <Spinning size='large' />

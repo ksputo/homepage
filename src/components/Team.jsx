@@ -59,13 +59,13 @@ const Founder = ({ name, title, description, image, email }) => (
           flex
           backgroundImage={`url(${image})`}
           basis="small"
-          justify="center"
-          align="center"
+          justify="end"
+          align="end"
         />
       }
       label={
         <Label
-          uppercase="true"
+          uppercase={true}
           margin="none"
           className="section-team__founder-title"
         >

@@ -21,8 +21,11 @@ export default ({ children }) =>
                 <NavLink to='/'>
                     <Anchor>Strona główna</Anchor>
                 </NavLink>
+                <NavLink to='/galeria'>
+                    <Anchor>Zdjęcia z wydarzeń</Anchor>
+                </NavLink>
                 <NavLink to='/kamraci'>
-                    <Anchor>Wydarzenia naszych kamratów</Anchor>
+                    <Anchor>Nadchodzące wydarzenia naszych kamratów</Anchor>
                 </NavLink>
             </Menu>
         </Header>
