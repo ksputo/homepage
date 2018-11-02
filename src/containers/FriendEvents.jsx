@@ -22,21 +22,22 @@ class FriendEvents extends Component {
 
     componentDidMount() {
         forkJoin(friendEventsProvider(friendProvider))
-            .subscribe(x => this.setState({
-                events: [...this.state.events, ...x
-                    .reduce((accumulated, current) => [...accumulated, ...current
-                        .filter(z => !accumulated.some(e => e.name !== z.name))])
-                ]
-            }));
+            .subscribe(x => {
+                this.setState({
+                    events: [...this.state.events, ...x].reduce((accumulated, current) => [...accumulated, ...current])
+                });
+            });
     }
 
     render() {
+        console.log(this.state);
         return (
             <MenuWrapped>
                 <Subpage title='Nadchodzące wydarzenia kamratów' className='friend-events'>
                     {
                         this.state.events.length > 0
-                            ? <Tiles fill={true}
+                            ? <Tiles fill={false}
+                                className='friend-events__tiles'
                                 flush={false}>
                                 {this.state.events.map(event => <div className='friend-events__event' key={`event-${event.name}`}><Tile>
                                     <a href={event.link} target='_blank'>

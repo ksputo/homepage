@@ -1,7 +1,13 @@
 .friend-events {
+    &__tiles {
+        justify-content: space-evenly;
+        max-width: 70%;
+    }
+
     &__event {
         background-color: $color-grey;
         border: 3px solid $color-yellow;
+        margin-bottom: 25px;
 
         & label, & h2 {
             color: $color-white;
